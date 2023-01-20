@@ -2,7 +2,14 @@
 module.exports = {
   content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        100: ['13px', '18px'],
+        200: ['15px', '20px'],
+        300: ['18px', '25px'],
+        500: ['50px', '68px']
+      }
+    },
     colors: {
       white: '#ffff',
       gray: {
@@ -18,7 +25,8 @@ module.exports = {
         light: '#910020'
       },
       black: {
-        light: '#3e3e3e'
+        light: '#3e3e3e',
+        dark: '#131313'
       }
     }
   },

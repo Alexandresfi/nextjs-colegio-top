@@ -2,14 +2,12 @@ import "tailwindcss/tailwind.css";
 import "../../styles/globals.css";
 import type { AppProps } from "next/app";
 
-import { Open_Sans } from "@next/font/google";
-
-const inter = Open_Sans({ subsets: ["latin"] });
+import MainContainer from "../components/MainContainer/MainContainer";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={inter.className}>
+    <MainContainer>
       <Component {...pageProps} />
-    </main>
+    </MainContainer>
   );
 }
