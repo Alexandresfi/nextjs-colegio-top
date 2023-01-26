@@ -8,6 +8,9 @@ module.exports = {
         200: ['15px', '20px'],
         300: ['18px', '25px'],
         500: ['50px', '68px']
+      },
+      backgroundImage: {
+        'icon-arrow-rigth': "url('/assets/icon-arrow-right.svg')"
       }
     },
     colors: {

@@ -2,7 +2,7 @@ import Image from "next/image";
 import IconArrow from "../../assets/icons/icon-arrow-down.svg";
 export const TextsHeader = () => {
   return (
-    <div className="flex flex-col justify-center items-center text-white h-3/4">
+    <div className="flex flex-col justify-center items-center h-3/4">
       <span className=" text-100">Educação é um tesouro</span>
       <h1 className="pt-5 pb-6 text-500">Top sistema de ensino</h1>
       <p className="text-200">

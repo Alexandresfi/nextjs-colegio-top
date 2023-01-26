@@ -9,7 +9,7 @@ export const HearderDesktop = () => {
   return (
     <header className="h-[773px] bg-[url('https://topsistemadeensino.com/assects/school.png')] bg-no-repeat bg-cover bg-center relative">
       <nav className="flex justify-between font-extrabold leading-6 max-w-screen-xl m-auto">
-        <ul className="flex justify-between grow list-none text-white pt-9">
+        <ul className="flex justify-between grow list-none pt-9">
           <li>
             <Link className="" href="/sobre">
               O Top
@@ -26,7 +26,7 @@ export const HearderDesktop = () => {
           <Image src={Logo} alt="logo" />
         </Link>
 
-        <ul className="flex justify-between grow list-none text-white pt-9">
+        <ul className="flex justify-between grow list-none pt-9">
           <li>
             <LinkNavBar href="#">Portal do Aluno</LinkNavBar>
           </li>
