@@ -38,16 +38,18 @@ export function ContainerContents ({showContent}:ChildrenProps) {
     
     return(
         <article>
-            <div className="flex justify-between items-center max-w-[904px] mx-auto mt-[122px]">
-                    <figure className='max-w-[199px] w-full h-[260px]' >
+            <div 
+            className="flex flex-col lg:flex-row justify-center lg:justify-between items-center max-w-[350px] mx-auto mt-[51px] lg:max-w-[904px]  lg:mt-[122px]"
+                >
+                    <figure className='h-[290px] max-w-[350px] lg:h-[260px] lg:max-w-[199px] w-full' >
                         <Image 
                         src={mainContent[showContent].image} 
                         alt={mainContent[showContent].label} 
-                        className='h-[232px] w-full text-center border-[5px] border-white'
+                        className=' h-[290px] max-w-[350px] lg:max-w-[199px] lg:h-[232px] w-full text-center border-[5px] border-white'
                         />
                         <figcaption className='text-center font-semibold text-lg mt-1'>{mainContent[showContent].label}</figcaption>
                     </figure>
-                    <div className='max-w-[592px]'>
+                    <div className='max-w-[340px] m-auto mt-14 lg:max-w-[592px]'>
                         <p className='text-left text-medium text-base min-h-[119px]'>{mainContent[showContent].text}</p>
 
                         <Link className='text-bold text-left text-base flex justify-start items-center translate-y-9' href='/sobre'>
