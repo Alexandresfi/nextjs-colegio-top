@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Section1Home } from "../components/Home/section1";
+import { Section2Home } from "../components/Home/sections/Content/section2";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         
       </Head>
-      <Section1Home/>
+      <Section1Home />
+      <Section2Home />
     </>
   );
 }
