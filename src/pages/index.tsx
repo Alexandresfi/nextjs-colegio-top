@@ -1,6 +1,8 @@
 import Head from "next/head";
-import { Section1Home } from "../components/Home/section1";
-import { Section2Home } from "../components/Home/sections/Content/section2";
+
+import { Section1Home } from "../components/Home/sections/section1";
+import { Section2Home } from "../components/Home/sections/section2";
+import { Section3Home } from "../components/Home/sections/section3";
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
       </Head>
       <Section1Home />
       <Section2Home />
+      <Section3Home />
     </>
   );
 }

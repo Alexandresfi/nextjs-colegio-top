@@ -11,7 +11,7 @@ export const HearderDesktop = () => {
       <nav className="flex justify-between font-extrabold leading-6 max-w-screen-xl m-auto">
         <ul className="flex justify-between grow list-none pt-9">
           <li>
-            <Link className="" href="/sobre">
+            <Link className="" href="/about">
               O Top
             </Link>
           </li>

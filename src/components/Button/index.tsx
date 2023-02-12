@@ -1,5 +1,5 @@
 
-import React, { ButtonHTMLAttributes, FunctionComponent, PropsWithChildren } from "react"
+import React, { ButtonHTMLAttributes, FunctionComponent } from "react"
 
 type ButtonProps = {
     children: string

@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import Mission from '../../../../assets/imgs/home/section1/Primeira/alunos3Ano.png'
-import Vision from '../../../../assets/imgs/home/section1/Primeira/visao.jpg'
-import Values from '../../../../assets/imgs/home/section1/Primeira/valores.jpg'
-import Adverts from '../../../../assets/imgs/home/section1/Primeira/anuncio.jpg'
+import Mission from '../../../assets/imgs/home/section1/Primeira/alunos3Ano.png'
+import Vision from '../../../assets/imgs/home/section1/Primeira/visao.jpg'
+import Values from '../../../assets/imgs/home/section1/Primeira/valores.jpg'
+import Adverts from '../../../assets/imgs/home/section1/Primeira/anuncio.jpg'
 
-import IconArrowRight from '../../../../assets/icons/icon-arrow-right.svg'
+import IconArrowRight from '../../../assets/icons/icon-arrow-right.svg'
 
 interface ChildrenProps {
     showContent: number
@@ -40,22 +40,22 @@ export function ContainerContents ({showContent}:ChildrenProps) {
         <article>
             <div 
             className="flex flex-col lg:flex-row justify-center lg:justify-between items-center max-w-[350px] mx-auto mt-[51px] lg:max-w-[904px]  lg:mt-[122px]"
-                >
-                    <figure className='h-[290px] max-w-[350px] lg:h-[260px] lg:max-w-[199px] w-full' >
+            >
+                <figure className='h-[290px] max-w-[350px] lg:h-[260px] lg:max-w-[199px] w-full' >
                         <Image 
                         src={mainContent[showContent].image} 
                         alt={mainContent[showContent].label} 
                         className=' h-[290px] max-w-[350px] lg:max-w-[199px] lg:h-[232px] w-full text-center border-[5px] border-white'
                         />
                         <figcaption className='text-center font-semibold text-lg mt-1'>{mainContent[showContent].label}</figcaption>
-                    </figure>
-                    <div className='max-w-[340px] m-auto mt-14 lg:max-w-[592px]'>
+                </figure>
+                <div className='max-w-[340px] m-auto mt-14 lg:max-w-[592px]'>
                         <p className='text-left text-medium text-base min-h-[119px]'>{mainContent[showContent].text}</p>
 
-                        <Link className='text-bold text-left text-base flex justify-start items-center translate-y-9' href='/sobre'>
+                        <Link className='text-bold text-left text-base flex justify-start items-center translate-y-9' href='/about'>
                             Ler mais <Image src={IconArrowRight} alt='arrow right' className='ml-6'/>
                         </Link>
-                    </div>
+                </div>
             </div>
         </article>
     )

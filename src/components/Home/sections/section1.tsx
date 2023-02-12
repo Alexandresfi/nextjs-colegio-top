@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { Button } from "../Button"
-import { ContainerContents } from "./sections/Content"
+import { Button } from "../../Button"
+import { ContainerContents } from "../Content"
 
 export const Section1Home = () => {
     const [toggleMainContent, setToggleMainContent] = useState(0)
@@ -11,7 +11,7 @@ export const Section1Home = () => {
 
     return(
         <section className=" bg-red-dark h-[924px] lg:h-[669px]">
-            <div className="max-w-screen-xl m-auto ">
+            <div className="max-w-screen-xl m-auto">
                 <h1 
                 className="text-center text-2xl pt-[78px] pb-10 lg:text-4xl lg:pt-[49px] lg:pb-[66px]" 
                 >

@@ -1,16 +1,26 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
+/** @type {import('tailwindcss').Config} \*/
 
 module.exports = {
-  content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx}', 
+    './src/components/**/*.{js,ts,jsx,tsx}'
+  ],
   theme: {
     extend: {
       fontSize: {
         100: ['13px', '18px'],
         200: ['15px', '20px'],
         300: ['18px', '25px'],
-        500: ['50px', '68px']
+        500: ['50px', '68px'],
+        600: ['64px', '87px']
       },
       backgroundImage: {
         'icon-arrow-rigth': "url('/assets/icon-arrow-right.svg')"
+      },
+      fontFamily: {
+        sans: ['var(--font-open)'],
       }
     },
     colors: {
