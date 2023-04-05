@@ -1,5 +1,6 @@
 import { Open_Sans } from "@next/font/google";
 import Link from "next/link";
+import { Carossel } from "../Content/Carossel";
 
 const open_Sans = Open_Sans({
     
@@ -13,7 +14,7 @@ export const Section3Home = () => {
     return(
         <section className={`bg-red-dark ${open_Sans.variable} font-sans pt-[65px] pb-[100px]`} >
             <div>
-                <div className="flex flex-col gap-5 items-start lg:flex-row lg:justify-between px-5 max-w-[937px] m-auto lg:gap-0" >
+                <div className="flex flex-col gap-5 items-start lg:flex-row lg:justify-between px-5 max-w-[937px] m-auto lg:gap-0 lg:p-0" >
                     <h1 className="text-4xl font-sans lg:text-600 lg:max-w-[405px] lg:w-full" >Sobre o Top</h1>
                     <div>
                         <h3 className="text-300 font-semibold w-full lg:max-w-[608px] lg:pt-3.5" >
@@ -32,6 +33,10 @@ export const Section3Home = () => {
                             Nossa História
                         </Link>
                     </div>
+                </div>
+
+                <div>
+                    <Carossel />
                 </div>
             </div>
         </section>
